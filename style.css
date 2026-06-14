@@ -1,15 +1,3 @@
-/* 
-font used: Roboto
-dark background color (hero and footer): #1F2937
-hero main text ("this website is awesome"): 48px #F9FAF8 weight: 900
-hero secondary text, header link text: 18px #E5E7EB
-hero logo text: 24px #F9FAF8
-button color, call to action background color: #3882F6
-information header text: 36px #1F2937 weight: 900
-quote section background color: #E5E7EB
-quote text: 36px #1F2937 weight: 300
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +23,6 @@ button {
     cursor: pointer;
     border-radius: 10px;
     width: fit-content;
-    margin-top: 20px;
 }
 
 h1,
@@ -98,6 +85,10 @@ li {
     flex-direction: column;
 }
 
+.hero-content p {
+    margin-bottom: 20px;
+}
+
 h2 {
     font-size: 36px;
     color: #1F2937;
@@ -108,9 +99,9 @@ h2 {
 
 .illustrations-container {
     display: flex;
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .illustration-container {
@@ -128,4 +119,72 @@ h2 {
 .random-information p {
     color: #1F2937;
     text-align: center;
+    margin-bottom: 80px;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    color: #1f2937;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.quotes {
+    background-color: #E5E7EB;
+}
+
+.cta-container {
+    width: 50%;
+    height: 120px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cta-button {
+    border: 1px solid #E5E7EB;
+    align-self: center;
+}
+
+.container-cta {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 80px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
